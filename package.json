@@ -34,7 +34,8 @@
     "prettier-format": "prettier --config .prettierrc.json --write .",
     "prerelease": "git clean -xfd && npm ci && npm test",
     "release": "release-it",
-    "test": "nyc mocha"
+    "test": "nyc mocha",
+    "postinstall": "npx tsc"
   },
   "dependencies": {
     "@xmldom/is-dom-node": "^1.0.1",
